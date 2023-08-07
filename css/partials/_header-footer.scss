@@ -1,0 +1,70 @@
+/* Estilos de header y footer*/
+.header{
+    @include condiciones-adicionales;
+    padding-top: 2rem;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.ul-nav{
+    font-family: "Montserrat-regular";
+    display: flex;
+    justify-content: start;
+    align-content: center;
+    gap: 1rem;
+    list-style-type: none;
+
+    &-2{
+        font-family: "Montserrat-regular";
+        display: flex;
+        justify-content: end;
+        list-style-type: none;
+        align-items: center;
+        gap: .5rem;
+        padding-right: 1rem;
+        padding-top: 1rem;
+    }
+}
+
+.margen-navbar{
+    margin-bottom: 2rem;
+}
+
+.footer{
+    background-color: $blancoPrincipal;
+    @include condiciones-adicionales;
+    text-decoration: none;
+    padding-top: 2rem;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.ul-footer{
+    text-align: left;
+    font-family: "Montserrat-regular";
+    justify-content: start;
+    align-content: center;
+    list-style-type: none;
+
+    &-2{
+        font-family: "Montserrat-regular";
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+        list-style-type: none;
+        gap: .5rem;
+        padding-right: 1rem;
+    }
+}
+
+.ul-footer{
+    li{
+        padding: .2rem;
+    }
+}
+
+.div-footer{
+    display: flex;
+    gap: 1rem;
+}
+/* Fin estilos de header y footer*/

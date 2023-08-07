@@ -1,0 +1,116 @@
+/* Estilos Grid */
+body{
+    background-image: linear-gradient(45deg, rgb(201, 201, 201), white, rgb(201, 201, 201));
+}
+
+.grilla{
+    @include grilla-contenedora;
+    text-decoration: none;
+    padding-bottom: 40px;
+
+    &-entrada-index{
+        @include grilla-contenedora;
+        text-decoration: none;
+        padding-bottom: 40px;
+    }
+
+    &-codigo{
+        @include codigo-sticky;
+        text-decoration: none;
+        padding-bottom: 40px;
+    }
+
+    &-codigo {
+        div{
+            gap: 1rem;
+        }
+    }
+
+    &-sticky{
+        @include codigo-sticky;
+        margin-bottom: 10px;
+        text-decoration: none;
+        position: sticky;
+        top: 80px;
+
+        .hover{
+            transition: 0.3s;
+
+            &:hover{
+                transform: translateY(-3px);
+                color: rgb(99, 197, 53);
+            }
+        }  
+    }
+
+    &-espacio{
+        padding-bottom: 1rem; 
+    }
+}
+
+.al-medio{
+    @include flex-al-medio;
+
+    &-scroll{
+        display: flex;
+        margin-bottom: 20px;
+    }
+
+    &-scroll{
+        img{
+            width: 70%;
+        }
+    }
+
+    &-sticky{
+        @include flex-al-medio;
+        font-family: "Montserrat-semibold";
+        background-color: $blancoPrincipal;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border: 0px solid transparent;
+        margin-bottom: 40px;
+        text-decoration: none;
+        gap: 1rem;
+
+            a{
+                color: black;
+                text-decoration: none;
+
+                a:hover{
+                    color: yellowgreen;  
+                }
+            }
+    }
+
+    &{
+        img{
+            margin-right: 2rem; 
+        }
+    }
+
+    &-foto{
+        @include flex-al-medio;
+        gap: 1rem;
+    }
+}
+
+.divScroll{
+    background-color: $colorScroll;
+    color: $blancoPrincipal;
+    text-align: center;
+    justify-content: center;
+    height: 400px;
+    overflow: scroll;
+
+    & img{
+        width: 100%;
+    }
+}
+
+.espacio-blanco{
+    background-color: transparent;
+    justify-self: center;
+    align-self: center;
+}
+/* Fin estilos Grid */

@@ -1,0 +1,98 @@
+/* Estilos main */
+.IrArriba {
+    & p{
+        font-family: "Montserrat-semibold";
+        text-align: center;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        transition: 0.3s;
+
+        &:hover{
+            transform: translateY(-5px);
+        }
+    }
+} 
+
+.Imagen-trabajos{
+    img{
+        margin-bottom: 1rem;
+    }
+} 
+
+.espacio-arriba{
+    margin-top: 40px;
+}
+
+.EspacioTrabajo{
+    margin-bottom: 30px;
+}
+
+.lineaExperiencia{
+    width: 40px;
+    border: none;
+    height: 5px;
+    background-color: $grisPrincipal;
+}
+
+.SectionSegundaParte{
+    @include condiciones-adicionales;
+    justify-content: start;
+    align-items: start;
+}
+/* Fin estilos main */
+
+/* Inicio estilos componentes */
+
+.espacio-filas-imagenes{
+    div{
+        margin-bottom: 25px;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.espacio-cajas{
+    @include condiciones-adicionales;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+
+    &-pop{
+        transition: 0.4s;
+
+        &:hover{
+            transform: scale(2);
+        }
+    }
+}
+
+.margin-slider{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.form-control-espacio{
+    gap: 1rem;
+}
+
+.espacio-filas-formulario{
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.espacio-form{
+    @include condiciones-adicionales;
+    justify-content: center;
+    align-items: center;
+}
+
+.fade-in-image { 
+    animation-name: fadeIn;
+    animation-duration: 1s; 
+    animation-timing-function: cubic-bezier(5,-5,.8,1.44);
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; translate: -100px;}
+    100% { opacity: 1; translate: 0;}
+  }
